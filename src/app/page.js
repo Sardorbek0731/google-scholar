@@ -1,3 +1,5 @@
+import Articles from "@/components/articles/articles";
+
 export default function Home() {
-  return <h1>Google Scholar</h1>;
+  return <Articles />;
 }
