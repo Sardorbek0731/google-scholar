@@ -15,15 +15,32 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  return {
+  const metadata = {
     title: article.title,
-    description: article.abstract.slice(0, 160),
-    keywords: article.keywords.join(", "),
+    description: article.abstract,
     openGraph: {
       title: article.title,
       description: article.abstract,
+      url: `https://online-articles.vercel.app/${article.id}`,
+      type: "article",
+      authors: article.authors,
+      publishedTime: article.publishedDate,
+    },
+    other: {
+      citation_title: article.title,
+      citation_author: article.authors.join("; "),
+      citation_publication_date: article.publishedDate,
+      citation_journal_title: "Online Research Journal of Uzbekistan",
+      citation_pdf_url: `https://online-articles.vercel.app${article.pdfURL}`,
+      citation_keywords: article.keywords.join(", "),
+      citation_abstract: article.abstract,
+      description: article.abstract,
+      citation_language: "uz",
+      citation_public_url: `https://online-articles.vercel.app/${article.id}`,
     },
   };
+
+  return metadata;
 }
 
 export default async function Article({ params }) {
