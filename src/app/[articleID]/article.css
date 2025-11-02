@@ -1,0 +1,81 @@
+/* article.css */
+
+/* Sahifa umumiy konteyneri */
+.article-detail-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Orqaga link */
+.article-detail-page a[href="/articles"] {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+}
+
+.article-detail-page a[href="/articles"]:hover {
+  text-decoration: underline;
+}
+
+/* Maqola kartasi */
+.article-detail-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Maqola sarlavhasi */
+.article-detail-card h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+/* Muallif va abstract */
+.article-detail-card p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Kalit so‘zlar */
+.article-detail-card p strong {
+  font-weight: bold;
+}
+
+/* PDF link */
+.article-detail-card a[target="_blank"] {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 8px 15px;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.article-detail-card a[target="_blank"]:hover {
+  background-color: #005bb5;
+}
+
+/* References sarlavhasi */
+.article-detail-card h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* References ro‘yxati */
+.article-detail-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.article-detail-card ul li {
+  margin-bottom: 8px;
+}
