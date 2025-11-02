@@ -3,6 +3,29 @@ import "./article.css";
 import Link from "next/link";
 import { articles } from "@/data/data";
 
+export async function generateMetadata({ params }) {
+  const { articleID } = await params;
+
+  const article = articles.find((a) => a.id === articleID);
+
+  if (!article) {
+    return {
+      title: "Maqola topilmadi",
+      description: "Siz izlagan maqola mavjud emas.",
+    };
+  }
+
+  return {
+    title: article.title,
+    description: article.abstract.slice(0, 160),
+    keywords: article.keywords.join(", "),
+    openGraph: {
+      title: article.title,
+      description: article.abstract,
+    },
+  };
+}
+
 export default async function Article({ params }) {
   const { articleID } = await params;
 
