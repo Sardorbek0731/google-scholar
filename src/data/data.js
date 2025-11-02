@@ -98,7 +98,7 @@ export const articles = [
       "aksion",
       "dendrit",
       "regeneratsiya",
-      "Altsgeymer",
+      "altsgeymer",
       "skleroz",
     ],
     pdfURL: "/papers/nerv-hujayralari.pdf",
