@@ -8,13 +8,6 @@ export async function generateMetadata({ params }) {
 
   const article = articles.find((a) => a.id === articleID);
 
-  if (!article) {
-    return {
-      title: "Maqola topilmadi",
-      description: "Siz izlagan maqola mavjud emas.",
-    };
-  }
-
   const metadata = {
     title: article.title,
     description: article.abstract,
@@ -23,7 +16,7 @@ export async function generateMetadata({ params }) {
       description: article.abstract,
       url: `https://online-articles.vercel.app/${article.id}`,
       type: "article",
-      authors: article.authors,
+      authors: article.authors.join("; "),
       publishedTime: article.publishedDate,
     },
     other: {
@@ -31,10 +24,11 @@ export async function generateMetadata({ params }) {
       citation_author: article.authors.join("; "),
       citation_publication_date: article.publishedDate,
       citation_journal_title: "Online Research Journal of Uzbekistan",
+      citation_volume: article.volume,
+      citation_issue: article.issue,
       citation_pdf_url: `https://online-articles.vercel.app${article.pdfURL}`,
       citation_keywords: article.keywords.join(", "),
       citation_abstract: article.abstract,
-      description: article.abstract,
       citation_language: "uz",
       citation_public_url: `https://online-articles.vercel.app/${article.id}`,
     },

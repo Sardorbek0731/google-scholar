@@ -1,9 +1,11 @@
 export const articles = [
   {
     id: "nutq-madaniyati",
+    volume: "1",
+    issue: "1",
     title:
       "O‘zbek tilida nutq madaniyatining shakllanishi va kommunikativ xususiyatlari",
-    authors: ["Sanayev, Farrux"],
+    authors: ["Sanayev Farrux Rustam o'g'li"],
     abstract: `Mazkur maqolada o‘zbek tilida nutq madaniyatining shakllanish jarayoni, uning kommunikativ, estetik va axloqiy xususiyatlari tahlil etilgan. Maqolada o‘zbek tili funksional uslublarining o‘zaro ta’siri, kommunikativ samaradorlik va nutq odob-axloqi me’yorlari zamonaviy ijtimoiy-madaniy jarayonlar kontekstida tahlil qilingan. Muallif nutq madaniyatini shaxsning til sezgisi, estetik didi va madaniy tafakkurini shakllantiruvchi individual hodisa sifatida yoritadi.`,
     keywords: [
       "nutq madaniyati",
@@ -29,8 +31,10 @@ export const articles = [
   },
   {
     id: "global-va-milliy-iqtisodiyot",
+    volume: "1",
+    issue: "2",
     title: "Global va milliy iqtisodiyotni rivojlantirish",
-    authors: ["Olmasaliyeva, Mushtariybonu"],
+    authors: ["Olmasaliyeva Mushtariybonu Yusubdjanovna"],
     abstract: `Maqolada iqtisodiyotning asosiy masalasi — cheklangan resurslardan yanada oqilona va samarali foydalanish zarurati yoritilgan. Shuningdek, iqtisodiyotni barqarorlashtirish jarayonining kafolati sifatida resurslarni boshqarish va iqtisodiy siyosatning ahamiyati tahlil qilingan.`,
     keywords: [
       "milliy iqtisodiyot",
@@ -39,7 +43,7 @@ export const articles = [
       "milliy iqtisodiyotning afzalliklari",
     ],
     pdfURL: "/papers/global-va-milliy-iqtisodiyot.pdf",
-    publishedDate: "2025-02-10",
+    publishedDate: "2024-02-10",
     references: [
       "Vaxabov, A.V., Xajibakiyev, Sh.X., Tashmatov, Sh.A., & Butaboyev, M.T. (2020). Yashil iqtisodiyot. T.: Universitet.",
       "Xaitboyev, R. (n.d.). Ekologik turizm. O'quv qo'llanma. T.: Barkamol fayz media.",
@@ -51,8 +55,13 @@ export const articles = [
   },
   {
     id: "psixosomatik-kasalliklar",
+    volume: "2",
+    issue: "1",
     title: "Psixosomatik kasalliklar: qadimgi va zamonaviy qarashlar",
-    authors: ["Sultonov, Ravshan", "Odiljonov, Ozodbek"],
+    authors: [
+      "Sultonov Ravshan Abduqaxxor o'g'li",
+      "Odiljonov Ozodbek Oybek o'g'li",
+    ],
     abstract: `Psixosomatik kasalliklar — bu insonning ruhiy holati va tana a’zolari o‘rtasidagi murakkab o‘zaro bog‘liqlik natijasida yuzaga keladigan patologik holatlardir. Bugungi globallashuv, stressli hayot tarzi, psixologik bosimlar va ijtimoiy o‘zgarishlar fonida bu kasalliklar soni keskin ortib bormoqda. Zamonaviy tibbiyotda psixosomatik yondashuv inson organizmini yaxlit tizim sifatida ko‘rib, nafaqat biologik, balki ruhiy va ijtimoiy omillarni ham tahlil etishni taqozo etadi.`,
     keywords: [
       "psixosomatik kasalliklar",
@@ -84,8 +93,13 @@ export const articles = [
   },
   {
     id: "nerv-hujayralari",
+    volume: "2",
+    issue: "1",
     title: "Nerv hujayralari: tuzilishi, vazifasi va anatomik ahamiyati",
-    authors: ["Abdurahmonova, Shahribonu", "Chorieva, Zulfiya Yusupovna"],
+    authors: [
+      "Abdurahmonova Shahribonu Olimovna",
+      "Chorieva Zulfiya Yusupovna",
+    ],
     abstract: `Ushbu maqolada nerv hujayralarining tuzilishi, funktsional xususiyatlari, neyronlar va glial hujayralarning o‘zaro aloqasi, neyrotransmissiya, neyroplastiklik va ularning turli fiziologik va patologik holatlardagi ahamiyati yoritiladi. Maqola, shuningdek, nerv tizimi bilan bog‘liq ba’zi muhim kasalliklarni va zamonaviy neyrobiologik tadqiqot yo‘nalishlarini ham qamrab oladi.`,
     keywords: [
       "neyron",
@@ -111,9 +125,11 @@ export const articles = [
   },
   {
     id: "spirtli-ichimliklar-cheklash",
+    volume: "3",
+    issue: "1",
     title:
       "AQSh qonunchiligini qo'llagan holda O'zbekiston hududida spirtli ichimliklar savdosini cheklash",
-    authors: ["Xomidova, Oyshaxonim Ulug`bek qizi"],
+    authors: ["Xomidova Oyshaxonim Ulug`bek qizi"],
     abstract:
       "Maqolada O`zbekiston Respublikasida AQSH Konstitutsiyasi qonunchiligi hamda chet el tajribasini qo`llagan holda mamlakat hududida spirtli ichimliklar, alkogol mahsulotlar, shuningdek, mast qiluvchi ichimliklarning savdosini cheklash; spirtli ichimliklar iste’mol qilish natijasida yuz beradigan jinoyatlarni oldini olish; ushbu harakatni qonun yo`li bilan amalga oshirish; jamiyatni sog`lom turmush tarziga o`rgatish va ularni alkogolizm hamda ichkilikbozlikdan uzoqlashtirish masalalari ko`rib chiqiladi.",
     keywords: [
@@ -129,7 +145,7 @@ export const articles = [
       "xalq manfaati",
     ],
     pdfURL: "/papers/spirtli-ichimliklar-cheklash.pdf",
-    publishedDate: "2025-03-25",
+    publishedDate: "2023-03-25",
     references: [
       "Amerika Qo`shma Shtatlari Konstitutsiyasi",
       "O`zbekiston Respublikasi Konstitutsiyasi",
